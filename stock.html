@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>GREEN HOUSE</title> <!-----ชื่อที่แสดงแถบข้างบนหน้าจอ----->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body bgcolor="7c904c" class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar" >
+  <div class="w3-container w3-display-container w3-padding-16" >
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <a href="index.html"><img src="logo1.jpg" alt="logo" style="width:100%"></a> <!-----โลโก้ร้านค้าซ้ายมือ เมื่อกดบนรูปภาพโลโก้จะกลับมาหน้าหลัก----->
+  </div>
+  
+  <!-----แถบเมนูด้านข้าง----->
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold" > 
+    <a href="bag.html" class="w3-bar-item w3-button">TOTE BAG</a>
+    <a href="cup.html" class="w3-bar-item w3-button">CUPS AND BOTTLE</a>
+    <a href="tube.html" class="w3-bar-item w3-button">STRAW</a>
+    <a href="bottle bag.html" class="w3-bar-item w3-button">OTHER</a>
+  </div>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding">Contact</a> <!-----แถบเมนูด้านข้าง(ข้างล่าง)----->
+</nav>
+<!-----จบแถบเมนูด้านข้าง----->
+
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- ลัญลักษณ์ขวามือบนสุด -->
+  <header class="w3-container w3-xlarge"> 
+    <p class="w3-right">
+      <a href="stock.html" style="text-decoration: none;" class="fa fa-shopping-cart w3-margin-right"></a> <!-----ปุ่มรูปรถเข็นเพื่อเข้าไปยังหน้ารถเข็นของตัวเอง----->
+      <a href="users.html" i class="fa fa-user"></i></a></p> <!-----ปุ่มรูปคนเพื่อเข้าไปยังหน้าสมัครสมาชิก----->
+      <br><h3 class="w3-wide" ><font color="white"><b>SHOPPING CART</b></font></h3>   <!-- หน้า SHOPPING CART-->
+  </header>
+    <br>
+  
+    <!-- สินค้าที่ลูกค้าได้หยิบใส่ตะกร้าสินค้าทั้งหมด พร้อมทั้งรายละเอีนดสินค้าและราคา -->
+      <dd><div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-white w3-center">
+            <li class="w3-white w3-xlarge w3-padding-32">ATTITUDE BAG</li> <!-- ชื่อสินค้า-->
+          <li class="w3-padding-16 w3-brown"><img src="กปผ1.jpg" style="width:100%"></li> <!-- รูปภาพสินค้า -->
+        <li class="w3-padding-16 w3-white"><b>COLOR : </b> WHITE</li> <!-- รายละเอียดสินค้าที่ลูกค้าเลือก -->
+        <li class="w3-padding-16 w3-white"><b>COUNT : </b> 1</li> <!-- รายละเอียดสินค้าที่ลูกค้าเลือก -->
+        <li class="w3-light-grey w3-padding-24">
+          <h2 class="w3-wide"><b>฿180</b></h2> <!-- ราคาของสินค้า -->
+          <a href="payment1.html" class="w3-button w3-black">PAYMENT </a> <!-- ปุ่มกดเพื่อไปยังหน้าชำระเงิน -->
+        </li>
+        </ul>
+        </div>
+        
+        <div class="w3-third w3-margin-bottom">
+          <ul class="w3-ul w3-border w3-white w3-center">
+            <li class="w3-white w3-xlarge w3-padding-32">NORMAL BAG</li> <!-- ชื่อสินค้า-->
+          <li class="w3-padding-16 w3-brown"><img src="ถือ1.jpg" style="width:100%"></li> <!-- รูปภาพสินค้า -->
+        <li class="w3-padding-16 w3-white"><b>COLOR : </b> GREEN</li> <!-- รายละเอียดสินค้าที่ลูกค้าเลือก -->
+        <li class="w3-padding-16 w3-white"><b>COUNT : </b> 2</li> <!-- รายละเอียดสินค้าที่ลูกค้าเลือก -->
+        <li class="w3-light-grey w3-padding-24">
+          <h2 class="w3-wide"><b>฿39</b></h2> <!-- ราคาของสินค้า -->
+          <a href="payment2.html" class="w3-button w3-black">PAYMENT</a> <!-- ปุ่มกดเพื่อไปยังหน้าชำระเงิน -->
+        </li>
+        </ul>
+        </div>
+        
+        <div class="w3-third">
+          <ul class="w3-ul w3-border w3-white w3-center">
+            <li class="w3-white w3-xlarge w3-padding-32">SILICONE STRAW V.2</li> <!-- ชื่อสินค้า-->
+          <li class="w3-padding-16 w3-brown"><img src="หลอด6.jpg" style="width:100%"></li> <!-- รูปภาพสินค้า -->
+        <li class="w3-padding-16 w3-white"><b>COLOR : </b> BLUE</li>  <!-- รายละเอียดสินค้าที่ลูกค้าเลือก -->
+        <li class="w3-padding-16 w3-white"><b>COUNT : </b> 1</li> <!-- รายละเอียดสินค้าที่ลูกค้าเลือก -->
+        <li class="w3-light-grey w3-padding-24">
+          <h2 class="w3-wide"><b>฿80</b></h2> <!-- ราคาของสินค้า -->
+          <a href="payment3.html" class="w3-button w3-black">PAYMENT </a> <!-- ปุ่มกดเพื่อไปยังหน้าชำระเงิน -->
+        </li>
+        </ul>
+        </div>
+      </div>
+    </div></dd>
+    
+    <p align="right"><a href="index.html" class="w3-button w3-black">SHOP NOW <i class="fa fa-arrow-right"></i></a></p><br> <!--ปุ่มกดเพื่อกลับสู่หน้าหลัก เพื่อที่จะทำการสั่งซื้อต่อ-->
+    
+  
+    
+</body>
+</html>
